@@ -1,0 +1,57 @@
+node-d3-collection (1.0.7-3) unstable; urgency=medium
+
+  [ Debian Janitor ]
+  * Use secure copyright file specification URI.
+  * Bump debhelper from old 11 to 12.
+  * Set debhelper-compat version in Build-Depends.
+  * Set upstream metadata fields: Bug-Database, Bug-Submit, Repository,
+    Repository-Browse.
+  * Update standards version to 4.4.1, no changes needed.
+  * Apply multi-arch hints.
+    + node-d3-collection: Add Multi-Arch: foreign.
+
+  [ Pirate Praveen ]
+  * Bump Standards-Version to 4.5.1 (no changes needed)
+  * Use node-rollup-plugin-terser (now available in the archive)
+  * Enable nocheck build profile
+  * Use pkg-js-tools auto install
+
+ -- Pirate Praveen <praveen@debian.org>  Tue, 15 Dec 2020 00:28:03 +0530
+
+node-d3-collection (1.0.7-2) unstable; urgency=medium
+
+  * Reupload to unstable
+  * Make build reproducible
+  * Bump Standards-Version to 4.4.0 (no changes needed)
+
+ -- Pirate Praveen <praveen@debian.org>  Mon, 08 Jul 2019 13:28:16 +0530
+
+node-d3-collection (1.0.7-1) experimental; urgency=medium
+
+  * New upstream version 1.0.7
+  * Drop dh-buildinfo dependency
+  * Bump Standards-Version to 4.3.0 (no changes needed)
+  * Use salsa.debian.org in Vcs-* fields
+  * use rollup.config.js, install ES module
+  * Use pkg-js-tools for tests
+
+ -- Pirate Praveen <praveen@debian.org>  Tue, 18 Jun 2019 21:30:17 +0530
+
+node-d3-collection (1.0.4-3) unstable; urgency=medium
+
+  * Build using rollup (webpack was used before rollup was available in main)
+  * Bump debhelper compat to 11
+
+ -- Pirate Praveen <praveen@debian.org>  Wed, 28 Feb 2018 21:43:12 +0530
+
+node-d3-collection (1.0.4-2) unstable; urgency=medium
+
+  * Use webpack to build umd module like upstream
+
+ -- Pirate Praveen <praveen@debian.org>  Tue, 09 Jan 2018 23:04:14 +0530
+
+node-d3-collection (1.0.4-1) unstable; urgency=low
+
+  * Initial release (Closes: #877579)
+
+ -- Pirate Praveen <praveen@debian.org>  Tue, 03 Oct 2017 12:21:57 +0530
