@@ -3,25 +3,24 @@ Section: javascript
 Priority: optional
 Maintainer: Debian Javascript Maintainers <pkg-javascript-devel@lists.alioth.debian.org>
 Uploaders: Pirate Praveen <praveen@debian.org>
-Build-Depends:
- debhelper-compat (= 12)
- , nodejs
- , pkg-js-tools
- , node-tape <!nocheck>
- , rollup
- , node-rollup-plugin-terser
+Build-Depends: debhelper-compat (= 13)
+ , dh-sequence-nodejs
  , node-d3-array <!nocheck>
-Standards-Version: 4.5.1
-Homepage: https://d3js.org/d3-collection/
-Vcs-Git: https://salsa.debian.org/js-team/node-d3-collection.git
+ , node-rollup-plugin-terser
+ , node-tape <!nocheck>
+ , nodejs
+ , rollup
+Standards-Version: 4.6.2
 Vcs-Browser: https://salsa.debian.org/js-team/node-d3-collection
+Vcs-Git: https://salsa.debian.org/js-team/node-d3-collection.git
+Homepage: https://d3js.org/d3-collection/
 Testsuite: autopkgtest-pkg-nodejs
+Rules-Requires-Root: no
 
 Package: node-d3-collection
 Architecture: all
-Depends:
- ${misc:Depends}
- , nodejs
+Depends: ${misc:Depends}
+Provides: ${nodejs:Provides}
 Multi-Arch: foreign
 Description: Handy data structures for elements keyed by string
  A common data type in JavaScript is the *associative array*, or more simply
